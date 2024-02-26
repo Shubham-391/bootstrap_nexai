@@ -62,4 +62,27 @@ $(".slider1").slick({
     },
   ],
 });
+// slider2
+$(".slider2").slick({
+  infinite: true,
+  speed: 5000,
+  slidesToScroll: 1,
+  arrows: false,
+  autoplay: true,
+  variableWidth: true,
+  autoplaySpeed: 0,
+  cssEase: "Linear",
+});
+// slider3
+$(".slider3").slick({
+  infinite: true,
+  speed: 5000,
+  slidesToScroll: 1,
+  arrows: false,
+  autoplay: true,
+  variableWidth: true,
+  autoplaySpeed: 0,
+  cssEase: "Linear",
+  rtl: true,
+});
 
