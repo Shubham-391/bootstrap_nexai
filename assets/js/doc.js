@@ -3,12 +3,12 @@ const line1 = document.querySelector(".line1"),
   line3 = document.querySelector(".line3"),
   navPage = document.querySelector(".small-navpage");
 function navbar1() {
-    line1.classList.toggle("span1");
-    line2.classList.toggle("span2");
-    line3.classList.toggle("d-none");
-    navPage.classList.toggle("start-0");
-    document.querySelector("body").classList.toggle("overflow-hidden");
-};
+  line1.classList.toggle("span1");
+  line2.classList.toggle("span2");
+  line3.classList.toggle("d-none");
+  navPage.classList.toggle("start-0");
+  document.querySelector("body").classList.toggle("overflow-hidden");
+}
 function navbar2() {
   line1.classList.toggle("span1");
   line2.classList.toggle("span2");
@@ -16,6 +16,27 @@ function navbar2() {
   navPage.classList.toggle("start-0");
   document.querySelector("body").classList.remove("overflow-hidden");
 }
+// aos
+AOS.init();
+// preloader
+setTimeout(() => {
+  document.getElementById("preloader").classList.add("d-none");
+  document.body.classList.remove("overflow-hidden");
+}, 2000);
+// back to top
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 200) {
+    document.getElementById("top").style.display = "flex";
+  } else {
+    document.getElementById("top").style.display = "none";
+  }
+});
+
+function up() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
 // slider1
 $(".slider1").slick({
   infinite: true,
@@ -85,4 +106,3 @@ $(".slider3").slick({
   cssEase: "Linear",
   rtl: true,
 });
-

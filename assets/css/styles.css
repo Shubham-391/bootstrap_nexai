@@ -9,6 +9,7 @@
   --fs-md3: 25px; /*32px*/
   --fs-lg: 25px; /*40px*/
   --fs-xl: 35px; /*60px*/
+  --fs-xxl: 64px; /* 128px*/
 
   /* color */
   --c1: rgba(2, 205, 207, 1);
@@ -21,6 +22,8 @@
   --c8: #02cdcf29;
   --c9: rgba(255, 255, 255, 0.02);
   --c10: rgba(252, 252, 252, 0.4);
+  --c11: #555;
+  --c12: #f9f9f9;
 }
 
 * {
@@ -64,6 +67,9 @@
 }
 .fs-xl {
   font-size: var(--fs-xl);
+}
+.fs-xxl {
+  font-size: var(--fs-xxl);
 }
 /* line height */
 .l-h-19 {
@@ -141,7 +147,6 @@
 }
 
 /* button */
-
 .custom-button {
   padding: 18px 20px;
   background: var(--c1);
@@ -155,6 +160,50 @@
 
 .pointer {
   cursor: pointer;
+}
+/* preloader */
+#preloader {
+  z-index: 30;
+}
+#preloader p {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid var(--c11);
+  border-top: 5px solid var(--c12);
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* back to top */
+#top {
+  width: 40px;
+  height: 40px;
+  bottom: 1%;
+  right: 1%;
+}
+.hide {
+  display: none;
 }
 
 /* header */
@@ -888,6 +937,16 @@
   }
 }
 @media (min-width: 768px) {
+  :root {
+    /* font size */
+    --fs-xxl: 128px;
+  }
+
+  /* back to top */
+  #top {
+    width: 50px;
+    height: 50px;
+  }
   /* section3 */
   .section3 {
     padding-top: 96px;
