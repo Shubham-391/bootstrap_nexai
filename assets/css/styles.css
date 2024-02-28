@@ -577,6 +577,9 @@
 .section6Part2 {
   width: 100%;
 }
+.section6img{
+  mix-blend-mode: lighten;
+}
 .max-w-572 {
   max-width: 572px;
 }
