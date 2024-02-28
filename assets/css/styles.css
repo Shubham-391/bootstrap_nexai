@@ -24,6 +24,7 @@
   --c10: rgba(252, 252, 252, 0.4);
   --c11: #555;
   --c12: #f9f9f9;
+  --c13: white;
 }
 
 * {
@@ -366,7 +367,7 @@
   padding-right: 16px;
 }
 .section2Box:hover {
-  background: var(--c1);
+  box-shadow: 0 0 10px 5px var(--c1) inset;
 }
 .section2Box img {
   width: 40px;
@@ -430,6 +431,13 @@
   background-repeat: no-repeat;
   width: 310px;
   height: 310px;
+}
+.slider1 .slick-slide .hexagonbg p {
+  color: var(--c13);
+  transition: all linear 300ms;
+}
+.slider1 .slick-slide:hover .hexagonbg p{
+  color: var(--c7);
 }
 .slider1Head {
   width: 58px;
@@ -503,11 +511,25 @@
 .slider2 .slick-slide {
   margin: 0 12px;
 }
+.slider2 .slick-slide p{
+  color: var(--c13);
+  transition: all linear 300ms;
+}
+.slider2 .slick-slide:hover p{
+  color: var(--c7);
+}
 .slider3 .slick-list {
   padding: 20px 0;
 }
 .slider3 .slick-slide {
   margin: 0 12px;
+}
+.slider3 .slick-slide p{
+  color: var(--c13);
+  transition: all linear 300ms;
+}
+.slider3 .slick-slide:hover p{
+  color: var(--c7);
 }
 .section4ring {
   width: 205px;
