@@ -658,6 +658,7 @@
   height: 207px;
   bottom: 6%;
   display: none;
+  z-index: -1;
 }
 /* footer */
 .footer {
