@@ -10,10 +10,10 @@ function navbar1() {
   document.querySelector("body").classList.toggle("overflow-hidden");
 }
 function navbar2() {
-  line1.classList.toggle("span1");
-  line2.classList.toggle("span2");
-  line3.classList.toggle("d-none");
-  navPage.classList.toggle("start-0");
+  line1.classList.remove("span1");
+  line2.classList.remove("span2");
+  line3.classList.remove("d-none");
+  navPage.classList.remove("start-0");
   document.querySelector("body").classList.remove("overflow-hidden");
 }
 // aos
