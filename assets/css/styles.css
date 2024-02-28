@@ -437,7 +437,7 @@
   transition: all linear 300ms;
 }
 .slider1 .slick-slide:hover .hexagonbg p{
-  color: var(--c7);
+  color: var(--c1);
 }
 .slider1Head {
   width: 58px;
@@ -516,7 +516,7 @@
   transition: all linear 300ms;
 }
 .slider2 .slick-slide:hover p{
-  color: var(--c7);
+  color: var(--c1);
 }
 .slider3 .slick-list {
   padding: 20px 0;
@@ -529,7 +529,7 @@
   transition: all linear 300ms;
 }
 .slider3 .slick-slide:hover p{
-  color: var(--c7);
+  color: var(--c1);
 }
 .section4ring {
   width: 205px;
